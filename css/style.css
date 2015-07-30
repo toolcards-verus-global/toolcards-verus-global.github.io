@@ -1,42 +1,150 @@
-
 .controls {
-    color: gray;
-    font-size: 2.6em;
-    line-height: 1.0;
-    text-decoration: none;
-    padding-left:0.2em;
-    padding-right:0.2em;
+	color: gray;
+	font-size: 2.6em;
+	line-height: 1.0;
+	text-decoration: none;
+	padding-left: 0.2em;
+	padding-right: 0.2em;
 }
 .controls:hover, .controls:focus {
-    color: gray;
-    text-decoration: none;
+	color: gray;
+	text-decoration: none;
 }
 .title {
-    font-family: Calibri,Candara,Segoe,Segoe UI,Optima,Arial,sans-serif;
-    font-size: 3.0vw;
-    display: inline;
-    padding: 0.4em;
+	font-family: Calibri, Candara, Segoe, Segoe UI, Optima, Arial, sans-serif;
+	font-size: 3.0vw;
+	display: inline;
+	padding: 0.4em;
 }
 #slider-thumbs {
-    margin-top: 2.0em;
+	margin-top: 2.0em;
 }
 #slider-thumbs img {
-    border: 0.1em solid black;
-    padding: 0.3em;
-    width: 105px;
-    height: 63px
-
+	border: 0.1em solid black;
+	padding: 0.3em;
+	width: 105px;
+	height: 63px
 }
 #slider-thumbs .selected img {
-    border: 0.3em solid black;
-    padding: 0.1em;
+	border: 0.3em solid black;
+	padding: 0.1em;
 }
-
 .img-responsive {
-    margin: 0 auto;
+	margin: 0 auto;
+}
+.row {
+	margin-left: 0px;
+	margin-right: 0px;
+}
+.leftarea {
+	width: 32%;
+	float: left;
+	padding-top: 17%;
+	position: relative;
+}
+.leftarea a {
+	cursor: pointer;
+}
+.leftarea img {
+	max-width: 100%;
 }
 
-.row {
-    margin-left: 0px;
-    margin-right: 0px;
+.copright {
+	margin-top: 9px;
+	width: 100%;
+	float: left;
+}
+.engeryArea {
+	float: right;
+	width: 66%;
+	position: relative;
+	padding: 0 15px;
+	z-index: 9999999;
+}
+.engeryArea .arrow {
+	bottom: -12px;
+	left: 0;
+	max-width: 686px;
+	position: absolute;
+	width: 100%;
+	z-index: 100;
+}
+.engeryArea .left {
+	float: left;
+	position: relative;
+	width: 30%;
+}
+.engeryArea .left a, .engeryArea .center a, .engeryArea .right a {
+	cursor: pointer;
+	float: right;
+	position: relative;
+	width: 100%;
+	z-index: 999;
+}
+.engeryArea .left a img, .engeryArea .center a img, .engeryArea .right a img {
+	max-width: 100%;
+}
+.greybg {
+	background: rgba(0, 0, 0, 0) url("../img/greyBg.png") no-repeat scroll left top;
+	float: left;
+	padding-bottom: 20px;
+	min-height: 71px;
+	width: 100%;
+}
+.greybg.one {
+	background: rgba(0, 0, 0, 0) url("../img/greyBg_one.png") no-repeat scroll left top;
+	min-height: 144px;
+}
+.greybg a {
+	padding-bottom: 10px;
+}
+.engeryArea .center {
+	width: 30%;
+	float: left;
+	padding: 0;
+	margin: 0 2% 0 2%;
+}
+.engeryArea .right {
+	width: 30%;
+	float: left;
+	margin-right: -1px;
+}
+.engeryArea .right a {
+	float: left;
+	cursor: pointer;
+}
+@media(max-width:630px) {
+.engeryArea .arrow {
+	bottom: -6px;
+}
+}
+ @media(max-width:1141px) {
+.engeryArea .arrow {
+	bottom: -7px;
+}
+}
+@media(min-width:1700px) {
+.engeryArea {
+	max-width: 668px;
+	width: 100%;
+	float: left;
+}
+}
+@media(max-width:577px) {
+.greybg.one {
+	min-height: 79px;
+}
+}
+@media(max-width:480px) {
+.greybg.one {
+	min-height: 75px;
+}
+}
+@media(max-width:400px) {
+.greybg.one, .greybg {
+	min-height: inherit;
+}
+.engeryArea .arrow {
+	bottom: -3px;
+}
 }
